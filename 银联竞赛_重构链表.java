@@ -17,7 +17,7 @@ public class 银联竞赛_重构链表{
         //     }
         //     else
         //     p2=p2.next;
-        //     p1=p1.next
+        //     p1=p1.next;
         // }
 
         if (head == null) return null;
