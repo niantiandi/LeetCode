@@ -48,7 +48,7 @@ public class 统计共同度过的日子数 {
         if(alice_leavedays<bob_arrivedays||bob_leavedays<alice_arrivedays){
             return 0;
         }
-        else{
+        else if(alice_arrivedays<=bob_arrivedays&alice_leavedays<=bob_leavedays||bob_arrivedays<=alice_arrivedays&bob_leavedays<=alice_leavedays){
             if(alice_leavedays>=bob_arrivedays){
                 return alice_leavedays-bob_arrivedays+1;
             }
@@ -56,8 +56,24 @@ public class 统计共同度过的日子数 {
                 return bob_leavedays-alice_arrivedays+1;
             }
         }
-
-
+        else if(alice_arrivedays>bob_arrivedays){
+            if(alice_leavedays<=bob_leavedays){
+                return alice_leavedays-alice_arrivedays+1;
+            }
+            else{
+                return bob_leavedays-alice_arrivedays+1;
+            }
+        }
+        else if(bob_arrivedays>alice_arrivedays){
+            if(bob_leavedays<=alice_leavedays){
+                return bob_leavedays-bob_arrivedays+1;
+            }
+            else{
+                return alice_leavedays-bob_arrivedays+1;
+            }
+        }
+        else
+        return 0;
 
     }
 }
