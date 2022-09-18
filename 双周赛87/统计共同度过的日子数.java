@@ -2,7 +2,7 @@ package 双周赛87;
 
 public class 统计共同度过的日子数 {
     public static void main(String[] args) {
-        int res=countDaysTogether("09_01", "10-19", "06_19", "10-20");
+        int res=countDaysTogether("08_06", "12_08", "02_04", "09_01");
         System.out.println(res);
     }
     public static int countDaysTogether(String arriveAlice, String leaveAlice, String arriveBob, String leaveBob) {
@@ -49,7 +49,7 @@ public class 统计共同度过的日子数 {
             return 0;
         }
         else if(alice_arrivedays<=bob_arrivedays&alice_leavedays<=bob_leavedays||bob_arrivedays<=alice_arrivedays&bob_leavedays<=alice_leavedays){
-            if(alice_leavedays>=bob_arrivedays){
+            if(alice_arrivedays<=bob_arrivedays&alice_leavedays<=bob_leavedays){
                 return alice_leavedays-bob_arrivedays+1;
             }
             else{
