@@ -6,11 +6,14 @@ public class 统计共同度过的日子数 {
         System.out.println(res);
     }
     public static int countDaysTogether(String arriveAlice, String leaveAlice, String arriveBob, String leaveBob) {
+
+        //转换为字符数组
         char Alice_arrive[]=arriveAlice.toCharArray();
         char Alice_leave[]=leaveAlice.toCharArray();
         char Bob_arrive[]=arriveBob.toCharArray();
         char Bob_leave[]=leaveBob.toCharArray();
 
+        // 计算出两人到来和离开的月份和日期
         int Alice_arrive_month=Character.getNumericValue(Alice_arrive[0])*10+Character.getNumericValue(Alice_arrive[1]);
         int Alice_arrive_day=Character.getNumericValue(Alice_arrive[3])*10+Character.getNumericValue(Alice_arrive[4]);
         int Alice_leave_month=Character.getNumericValue(Alice_leave[0])*10+Character.getNumericValue(Alice_leave[1]);
@@ -22,6 +25,7 @@ public class 统计共同度过的日子数 {
         
         int[] year={31,28,31,30,31,30,31,31,30,31,30,31};
 
+        // 计算出两人到来和离开距一年开始时的天数
         int alice_arrivedays=Alice_arrive_day;
         for (int i = 0; i < Alice_arrive_month-1; i++) {
             alice_arrivedays+=year[i];
@@ -45,6 +49,7 @@ public class 统计共同度过的日子数 {
 
 
         //FIXME:没有考虑所有情况
+        // 比较两人到来与离开时距一年开始时的天数，便于考虑
         if(alice_leavedays<bob_arrivedays||bob_leavedays<alice_arrivedays){
             return 0;
         }
