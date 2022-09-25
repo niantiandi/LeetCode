@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch test",
+            "request": "launch",
+            "mainClass": "test",
+            "projectName": "LeetCode_f4920a45"
+        },
+        {
+            "type": "java",
             "name": "Launch tetete",
             "request": "launch",
             "mainClass": "双周赛87.tetete",
