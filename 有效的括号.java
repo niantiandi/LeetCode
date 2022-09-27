@@ -36,8 +36,17 @@ public class 有效的括号 {
             String s;
             System.out.println("请输入字符串:");
             s=input.next();
-            System.out.println(s);
+            // System.out.println(s);
+            boolean re=isValid(s);
+            System.out.println(re);
         }
-        
+    }
+
+    public static boolean isValid(String s) {
+        int length=s.length()/2;
+        for (int i = 0; i < length; i++) {
+            s=s.replace("()", "").replace("[]", "").replace("{}", "");
+        }
+        return s.length()==0;
     }
 }
