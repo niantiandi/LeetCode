@@ -8,10 +8,10 @@ public class 统计共同度过的日子数 {
     public static int countDaysTogether(String arriveAlice, String leaveAlice, String arriveBob, String leaveBob) {
 
         //转换为字符数组
-        char Alice_arrive[]=arriveAlice.toCharArray();
-        char Alice_leave[]=leaveAlice.toCharArray();
-        char Bob_arrive[]=arriveBob.toCharArray();
-        char Bob_leave[]=leaveBob.toCharArray();
+        char[] Alice_arrive =arriveAlice.toCharArray();
+        char[] Alice_leave =leaveAlice.toCharArray();
+        char[] Bob_arrive =arriveBob.toCharArray();
+        char[] Bob_leave =leaveBob.toCharArray();
 
         // 计算出两人到来和离开的月份和日期
         int Alice_arrive_month=Character.getNumericValue(Alice_arrive[0])*10+Character.getNumericValue(Alice_arrive[1]);

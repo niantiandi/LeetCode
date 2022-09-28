@@ -1,0 +1,78 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch test",
+            "request": "launch",
+            "mainClass": "test",
+            "projectName": "LeetCode_f4920a45"
+        },
+        {
+            "type": "java",
+            "name": "Launch tetete",
+            "request": "launch",
+            "mainClass": "双周赛87.tetete",
+            "projectName": "LeetCode_f4920a45"
+        },
+        {
+            "type": "java",
+            "name": "Launch 统计共同度过的日子数",
+            "request": "launch",
+            "mainClass": "双周赛87.统计共同度过的日子数",
+            "projectName": "LeetCode_f4920a45"
+        },
+        {
+            "type": "java",
+            "name": "Launch 银联竞赛_重构链表",
+            "request": "launch",
+            "mainClass": "银联竞赛_重构链表",
+            "projectName": "LeetCode_f4920a45"
+        },
+        {
+            "type": "java",
+            "name": "Launch 可变参数",
+            "request": "launch",
+            "mainClass": "可变参数",
+            "projectName": "LeetCode_f4920a45"
+        },
+        {
+            "type": "java",
+            "name": "Launch X的平方根",
+            "request": "launch",
+            "mainClass": "X的平方根",
+            "projectName": "LeetCode_f4920a45"
+        },
+        {
+            "type": "java",
+            "name": "Launch 删除有序数组中的重复项",
+            "request": "launch",
+            "mainClass": "删除有序数组中的重复项",
+            "projectName": "LeetCode_f4920a45"
+        },
+        {
+            "type": "java",
+            "name": "Launch 有效的括号",
+            "request": "launch",
+            "mainClass": "有效的括号",
+            "projectName": "LeetCode_f4920a45"
+        },
+        {
+            "type": "java",
+            "name": "Launch 最长公共前缀",
+            "request": "launch",
+            "mainClass": "最长公共前缀",
+            "projectName": "LeetCode_4e186e09"
+        },
+        {
+            "type": "java",
+            "name": "Launch 罗马数字转整数",
+            "request": "launch",
+            "mainClass": "罗马数字转整数",
+            "projectName": "LeetCode_4e186e09"
+        }
+    ]
+}

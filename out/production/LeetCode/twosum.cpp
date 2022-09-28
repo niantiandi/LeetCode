@@ -17,8 +17,8 @@ int main(){
 		cin>>target;
 		for(int i=0;i<count-1;i++)
 			for(int j=0;(j<count)&&(j!=i);j++){
-		        if(target==arr[i]+arr[j])
-			    cout<<"["<<j<<","<<i<<"]"<<endl;
+		if(target==arr[i]+arr[j])
+			cout<<"["<<j<<","<<i<<"]"<<endl;
 			}
 		return 0;
 }
