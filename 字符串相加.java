@@ -1,8 +1,11 @@
+import java.util.Scanner;
 public class 字符串相加 {
 
     public static void main(String[] args) {
-        String num1="1234678";
-        String num2="744545";
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("请输入两个字符串:");
+        String num1=scanner.next();
+        String num2=scanner.next();
         System.out.println(addStrings(num1,num2));
     }
     public static String addStrings(String num1, String num2) {
