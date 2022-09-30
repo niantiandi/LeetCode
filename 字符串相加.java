@@ -12,7 +12,7 @@ public class 字符串相加 {
         int i=num1.length()-1;
         int j=num2.length()-1;
         int flag=0;
-        StringBuffer answer=new StringBuffer();
+        StringBuilder answer=new StringBuilder();
         while (i>=0||j>=0||flag!=0){
             int x=i>=0?num1.charAt(i)-'0':0;
             int y=j>=0?num2.charAt(j)-'0':0;
