@@ -1,4 +1,4 @@
-package 力扣杯秋季编程大赛;
+package 力扣杯秋季编程大赛.个人;
 public class 气温变化趋势 {
     public int temperatureTrend(int[] temperatureA, int[] temperatureB) {
         int changeA[]=new int [temperatureA.length-1];

@@ -1,4 +1,4 @@
-package 力扣杯秋季编程大赛;
+package 力扣杯秋季编程大赛.个人;
 public class test {
     public static void main(String[] args) {
         int test[]={1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1};
